@@ -1,4 +1,4 @@
-body{
+/* body{
     text-align: center;
     margin: 0px;
     padding: 0px;
@@ -11,4 +11,21 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 9px;
+} */
+/* .container{
+  background-color: aqua; 
+  height: 600px;
+  width: 900px; 
+display: grid;
+grid-template-columns: repeat(3 , 1fr);
+grid-gap: 10px;
+place-items: center;
+}
+.items{
+    background-color: blue;
+    height: 101px;
+    width: 111px;
+} */
+p{
+    width: 10px;
 }
