@@ -222,7 +222,7 @@
 // let zero = document.getElementById('zero');
 // let counting = 0;
 // let a = setInterval(()=>{
-        
+
 // counting++
 // zero.innerText = counting
 // counting == 100?clearInterval(a):a
@@ -288,7 +288,7 @@
 //  greetUser(greeting);
 //  function greetUser(greeting ) { 
 //       alert(greeting); 
-      
+
 //  }
 
 // let fC = a.slice(0,1) 
@@ -340,6 +340,65 @@
 // window.location.href = 'check.html'
 // })
 
-let a = [1,7,2,3,9,4,6,8,5,10]
-a.sort((a,b) => a-b)
-console.log(a)
+// let a = [1,7,2,3,9,4,6,8,5,10]
+// a.sort((a,b) => a-b)
+// console.log(a)
+
+// let promise = new Promise((resolve,reject) => {
+//     let a = 10 ;
+
+//     if(a === 10){
+//         resolve(true)
+//     }else{
+//         reject(false)
+//     }
+// })
+// promise.then((a) => {
+// console.log(a)
+// }).catch((a) => {
+//     console.log(a)
+// })
+
+
+// let a = 0;
+// let i = 0;
+// do {
+//     console.log(a)
+//     a++
+// } while (a < 0);
+// while (i < 0) {
+//     console.log(i)
+//     i++
+// }
+
+// let zero = document.getElementById('zero');
+// let a =0  ;
+// setInterval(() => {
+// a++
+// zero.innerText = a
+// },79) 
+
+// let obj= {
+// name:'Ghulam muhiuddin',
+// fname : 'Imran'
+// };
+// let {name : a,fname : b} = obj
+
+// console.log(a,b)\;
+
+let p = document.getElementById('zero');
+// // console.log(p.childNodes.length)
+// // console.log(p.n)
+
+
+// var liElements = document.getElementsByTagName("li");
+// var howManyLi = liElements.length;
+//  for (var i = 0; i < howManyLi; i++) {
+//        if (liElements[i].innerHTML === "") { 
+//              liElements[i].innerHTML = "coming soon"; 
+//                } 
+// }
+p.addEventListener('click', function () {
+    
+window.location.href = 'check.html'
+})

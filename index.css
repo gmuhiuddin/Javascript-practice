@@ -26,6 +26,11 @@ place-items: center;
     height: 101px;
     width: 111px;
 } */
-p{
+/* p{
     width: 10px;
+} */
+.input {
+    height: 500px;
+    width: 700px;
+    font-size: 49px;
 }
