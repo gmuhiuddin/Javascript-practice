@@ -165,3 +165,54 @@
 // }
 // console.log(totalWorkingDays)
 // }  
+// let a = 150;
+// console.log(a);
+// a++
+// console.log(a);
+// var num = 1; 
+// console.log(num)
+// num--
+// var newNum = num;
+// console.log(num)
+// console.log(num,newNum)
+// var totalCost = 1 + (3 * 4);
+
+// var resultOfComputation = (2 * 4) * 2+4;
+
+// console.log(resultOfComputation)
+
+// alert("2" + "2");
+// console.log('GhuLaM')
+// let pets = [];
+// console.log(pets)
+// pets.push("fish", "ferret",1);
+// pets.pop()
+// var firstNames = ["BlueRay ", "Upchuck ", "Lojack ", "Gizmo "];
+//   var lastNames = ["Zzz", "Burp", "Dogbone", "Droop"]; 
+// for(let i =0;i < firstNames.length;i++){
+//     console.log(firstNames[i],lastNames[i])
+// }
+
+//     var fullNames = []; 
+//     for (var i = 0; i < 5; i++) { 
+//            for (var j = 0; j < 5; j++) { 
+//                   document.write(i,j+"<br/>")
+//                    } 
+//  }
+//  console.log(fullNames)
+
+// let a = ['ghulam']
+// let b = ['muhiuddin']
+// a=a.concat(b)
+// co  nsole.log(a)
+// var a = [1,3,4,5]
+// a.length= 0
+// a.push('a')
+console.log(a)
+
+String
+Number
+Boolean
+Object
+Array
+undefined
