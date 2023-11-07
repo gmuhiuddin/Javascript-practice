@@ -208,11 +208,27 @@
 // var a = [1,3,4,5]
 // a.length= 0
 // a.push('a')
-console.log(a)
+// console.log(a)
 
-String
-Number
-Boolean
-Object
-Array
-undefined
+// let p = fetch('https://goweather.herokuapp.com/weather');
+
+// p.then(() =>{
+//     console.log('abc')
+// }).catch(() => {
+//     console.log('xyz')
+// })
+let weatherInfo = document.getElementById('a');
+fetch(
+      `https://api.weatherapi.com/v1/current.json?key=91b4369798474fee84b51233233010&q=lahore&aqi=no`
+    )
+      .then(a => a.json())
+      .then(data => {
+        console.log(data)
+        const weatherHtml = `<div class='weathercontainer'> 
+        <div class='row'> <h2>Temperature in ${data?.location?.name} (${data?.location?.lat} , ${data?.location?.lon})</h2>  </div>
+        <div class='row'> <span>Temperature </span> <span> ${data?.current?.temp_c} <sup>o</sup>C</span>  </div>
+        <div class='row'> <span>Feels Like </span> <span> ${data?.current?.feelslike_c} <sup>o</sup> C</span>  </div>
+        </div>`
+
+        weatherInfo.innerHTML = weatherHtml
+      })
