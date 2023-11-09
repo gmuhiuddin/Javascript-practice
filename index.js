@@ -217,18 +217,27 @@
 // }).catch(() => {
 //     console.log('xyz')
 // })
-let weatherInfo = document.getElementById('a');
-fetch(
-      `https://api.weatherapi.com/v1/current.json?key=91b4369798474fee84b51233233010&q=lahore&aqi=no`
-    )
-      .then(a => a.json())
-      .then(data => {
-        console.log(data)
-        const weatherHtml = `<div class='weathercontainer'> 
-        <div class='row'> <h2>Temperature in ${data?.location?.name} (${data?.location?.lat} , ${data?.location?.lon})</h2>  </div>
-        <div class='row'> <span>Temperature </span> <span> ${data?.current?.temp_c} <sup>o</sup>C</span>  </div>
-        <div class='row'> <span>Feels Like </span> <span> ${data?.current?.feelslike_c} <sup>o</sup> C</span>  </div>
-        </div>`
+// let weatherInfo = document.getElementById('a');
+// fetch(
+//       `https://api.weatherapi.com/v1/current.json?key=91b4369798474fee84b51233233010&q=lahore&aqi=no`
+//     )
+//       .then(a => a.json())
+//       .then(data => {
+//         console.log(data)
+//         const weatherHtml = `<div class='weathercontainer'> 
+//         <div class='row'> <h2>Temperature in ${data?.location?.name} (${data?.location?.lat} , ${data?.location?.lon})</h2>  </div>
+//         <div class='row'> <span>Temperature </span> <span> ${data?.current?.temp_c} <sup>o</sup>C</span>  </div>
+//         <div class='row'> <span>Feels Like </span> <span> ${data?.current?.feelslike_c} <sup>o</sup> C</span>  </div>
+//         </div>`
 
-        weatherInfo.innerHTML = weatherHtml
-      })
+//         weatherInfo.innerHTML = weatherHtml
+//       })
+
+
+let btn = document.getElementById('btn');
+
+
+btn.addEventListener('click' , a => {
+  a.preventDefault()
+  console.log(a)
+})
