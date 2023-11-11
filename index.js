@@ -234,10 +234,24 @@
 //       })
 
 
-let btn = document.getElementById('btn');
+// let btn = document.getElementById('btn');
 
 
-btn.addEventListener('click' , a => {
-  a.preventDefault()
-  console.log(a)
+// btn.addEventListener('click' , a => {
+//   a.preventDefault()
+//   console.log(a)
+// })
+
+async function abc () {
+  let a = 8 
+  let c = await a
+  let b = 7 
+  let d = await b
+  return [c,d];
+}
+abc().then((vae) => {
+  console.log(vae)
+})
+.catch((error) => {
+ console.log(error) 
 })
