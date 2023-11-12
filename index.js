@@ -242,16 +242,32 @@
 //   console.log(a)
 // })
 
-async function abc () {
-  let a = 8 
-  let c = await a
-  let b = 7 
-  let d = await b
-  return [c,d];
-}
-abc().then((vae) => {
-  console.log(vae)
-})
-.catch((error) => {
- console.log(error) 
-})
+// async function abc () {
+//   let a = 8 
+//   let c = await a
+//   let b = 7 
+//   let d = await b
+//   return [c,d];
+// }
+// abc().then((vae) => {
+//   console.log(vae)
+// })
+// .catch((error) => {
+//  console.log(error) 
+// })
+
+// async function test () {
+//   console.log('A')
+//   await console.log('B')
+//   console.log('C')
+// }
+// test()
+// console.log('D')
+// console.log('E')
+
+// async function abc () {
+//  await fetch(
+//     `https://api.weatherapi.com/v1/current.json?key=91b4369798474fee84b51233233010&q=lahore&aqi=no`
+//   )
+// }
+// abc().then(value => console.log(value.js));
