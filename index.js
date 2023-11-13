@@ -257,13 +257,21 @@
 // })
 
 // async function test () {
-//   console.log('A')
-//   await console.log('B')
-//   console.log('C')
+//     let a = await 'ghulam muhiuddin'
+
+//     try{
+//         return c
+//     }
+//     catch(error){
+//         console.log('error')
+//     }
 // }
-// test()
-// console.log('D')
-// console.log('E')
+// test().then((value) => {
+//     console.log(value)
+// })
+
+// console.log('C')
+
 
 // async function abc () {
 //  await fetch(
@@ -271,3 +279,7 @@
 //   )
 // }
 // abc().then(value => console.log(value.js));
+
+
+let a = prompt('What is your name');
+console.log(a);
