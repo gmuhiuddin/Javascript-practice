@@ -29,8 +29,12 @@ place-items: center;
 /* p{
     width: 10px;
 } */
-.input {
+/* .input {
     height: 500px;
     width: 700px;
     font-size: 49px;
+} */
+h1{
+    text-align: center;
+    margin-top: 249px;
 }

@@ -281,5 +281,15 @@
 // abc().then(value => console.log(value.js));
 
 
-let a = prompt('What is your name');
-console.log(a);
+// let a = prompt('What is your name');
+// console.log(a);
+
+// let zero = document.getElementById('zero');
+// let a = 0;
+// let set = setInterval(() => {
+//     a++
+//     zero.innerText = a 
+//     if (a === 599){
+// clearInterval(set)
+//     }
+// },8)
