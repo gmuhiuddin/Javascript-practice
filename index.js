@@ -293,3 +293,5 @@
 // clearInterval(set)
 //     }
 // },8)
+let a = document.getElementById('zero')
+console.log(a)
