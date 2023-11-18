@@ -293,5 +293,15 @@
 // clearInterval(set)
 //     }
 // },8)
-let a = document.getElementById('zero')
-console.log(a)
+// let a = document.getElementById('zero')
+// console.log(a)
+let x = 10;
+
+function increaseByTwo(y) {
+let a = y + 2;
+return a;
+}
+
+let result = increaseByTwo(x);
+
+console.log(result);
