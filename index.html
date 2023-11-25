@@ -49,23 +49,20 @@ console.log(hijriDate())
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Islamic Date</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-
-    <script>
-            // Get the current Gregorian date
-            var today = new Date();
-            var gregorianDate = today.toISOString().slice(0, 10);
-            console.log(gregorianDate)
-            
-            // fetch("https://hijri.habibur.com/api01/date/?date=2023-11-18")
-            fetch(
-      `https://hijri.habibur.com/api01/date/?date=${gregorianDate}`
-    )
-      .then(response => response.json())
-      .then(data => {
-        console.log(data)
-    })
+<div id="form-container">
+  <form id="form">
+    <input placeholder="Email" required type="email" id="userEmail">
+  <input placeholder="Password" required type="password" id="userPassword">
+  <button type="submit">Submit</button>
+  </form>
+</div>
+<div id="container">
+<h1>Hello user</h1>
+</div>
+    <script type="module" src="index.js">
     </script>
 </body>
 </html>

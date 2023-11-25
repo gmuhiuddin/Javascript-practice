@@ -295,13 +295,68 @@
 // },8)
 // let a = document.getElementById('zero')
 // console.log(a)
-let x = 10;
+// let x = 10;
 
-function increaseByTwo(y) {
-let a = y + 2;
-return a;
-}
+// function increaseByTwo(y) {
+// let a = y + 2;
+// return a;
+// }
 
-let result = increaseByTwo(x);
+// let result = increaseByTwo(x);
 
-console.log(result);
+// console.log(result);
+
+
+
+
+// import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+// import { getAuth , createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js";
+
+// const firebaseConfig = {
+//   apiKey: "AIzaSyDMeG-Yt8eUI3eoSEbLokIk9Fo_fCRTZ3k",
+//   authDomain: "blog-app-9f834.firebaseapp.com",
+//   projectId: "blog-app-9f834",
+//   storageBucket: "blog-app-9f834.appspot.com",
+//   messagingSenderId: "114009764949",
+//   appId: "1:114009764949:web:3c7974840f125054e290dc",
+//   measurementId: "G-K5QB7B6K9N"
+// };
+
+
+// Initialize Firebase
+// const app = initializeApp(firebaseConfig);
+// const auth = getAuth(app);
+
+
+// let form = document.getElementById('form');
+// let userEmail = document.getElementById('userEmail');
+// let userPassword = document.getElementById('userPassword');
+// let container = document.getElementById('container');
+// let formContainer = document.getElementById('form-container');
+// form.addEventListener('submit' , (submitedForm) => {
+// submitedForm.preventDefault()
+
+// createUserWithEmailAndPassword(auth, userEmail.value, userPassword.value)
+//   .then((userCredential) => {
+//     // Signed up 
+//     const user = userCredential.user;
+//     // ...
+//     formContainer.style.display = 'none'
+//     container.style.display = 'block'
+//   })
+//   .catch((error) => {
+//     const errorCode = error.code;
+//     const errorMessage = error.message;
+//     // ..
+//   });
+// })
+
+
+
+
+
+
+
+
+
+

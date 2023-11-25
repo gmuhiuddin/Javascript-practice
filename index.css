@@ -34,7 +34,16 @@ place-items: center;
     width: 700px;
     font-size: 49px;
 } */
-h1{
+/* h1{
     text-align: center;
     margin-top: 249px;
+} */
+
+
+#container{
+    display: none;
+}
+
+#form-container{
+    display: block;
 }
