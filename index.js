@@ -323,7 +323,7 @@
 // };
 
 
-// Initialize Firebase
+// // Initialize Firebase
 // const app = initializeApp(firebaseConfig);
 // const auth = getAuth(app);
 
@@ -333,7 +333,9 @@
 // let userPassword = document.getElementById('userPassword');
 // let container = document.getElementById('container');
 // let formContainer = document.getElementById('form-container');
+
 // form.addEventListener('submit' , (submitedForm) => {
+
 // submitedForm.preventDefault()
 
 // createUserWithEmailAndPassword(auth, userEmail.value, userPassword.value)
@@ -341,22 +343,13 @@
 //     // Signed up 
 //     const user = userCredential.user;
 //     // ...
-//     formContainer.style.display = 'none'
-//     container.style.display = 'block'
+//     formContainer.style.display = 'none';
+//     container.style.display = 'block';
 //   })
 //   .catch((error) => {
 //     const errorCode = error.code;
 //     const errorMessage = error.message;
+//     alert(errorMessage)
 //     // ..
 //   });
 // })
-
-
-
-
-
-
-
-
-
-
