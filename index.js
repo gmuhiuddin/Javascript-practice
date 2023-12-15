@@ -355,10 +355,15 @@
 // })
 
 
-let arr = [10, 'a', 3, 4, 5, 6, 7]
+let arr = [10, 9, 3,19, 4, 5, 6, 7]
 
 let a = arr.reduce((a,b) => {
-    return a+b
+    return a-b
 })
 
-console.log(a)
+// console.log(a)
+
+let b = arr.findIndex((age) => {
+    return age > 18;
+})
+console.log(b)
