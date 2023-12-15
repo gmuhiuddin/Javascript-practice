@@ -353,3 +353,12 @@
 //     // ..
 //   });
 // })
+
+
+let arr = [10, 'a', 3, 4, 5, 6, 7]
+
+let a = arr.reduce((a,b) => {
+    return a+b
+})
+
+console.log(a)

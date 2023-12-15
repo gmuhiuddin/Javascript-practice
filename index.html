@@ -1,48 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Islamic Date Example</title>
-</head>
-<body>
-
-  <label for="gregorianDate">Gregorian Date:</label>
-  <input type="date" id="gregorianDate" onchange="updateIslamicDate()">
-
-  <label for="islamicDate">Islamic Date:</label>
-  <input type="text" id="islamicDate" readonly>
-
-  <script>
-    function toIslamicDate(gregorianDate) {
-      const gDate = new Date(gregorianDate);
-      const formatter = new Intl.DateTimeFormat('en-US-u-ca-islamic', {
-        year: 'numeric',
-        month: 'numeric',
-        day: 'numeric',
-      });
-      const parts = formatter.formatToParts(gDate);
-      return `${parts[6].value} ${parts[4].value} ${parts[2].value} AH`;
-    }
-
-    function updateIslamicDate() {
-      // Get the Gregorian date from the input field
-      const gregorianDateInput = document.getElementById('gregorianDate');
-      const gregorianDateValue = gregorianDateInput.value;
-
-      // Convert the Gregorian date to the Islamic date
-      const islamicDate = toIslamicDate(gregorianDateValue);
-
-      // Update the Islamic date input field
-      const islamicDateInput = document.getElementById('islamicDate');
-      islamicDateInput.value = islamicDate;
-      console.log(islamicDate)
-    }
-console.log(hijriDate())
-  </script>
-
-</body>
-</html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,7 +7,7 @@ console.log(hijriDate())
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<div id="form-container">
+<!-- <div id="form-container">
   <form id="form">
     <input placeholder="Email" required type="email" id="userEmail">
   <input placeholder="Password" required type="password" id="userPassword">
@@ -60,13 +15,9 @@ console.log(hijriDate())
   </form>
 </div>
 <div id="container">
-<h1>Hello user</h1>
-</div>
+<h1>Hello user</h1> -->
+<!-- </div> -->
     <script type="module" src="index.js">
     </script>
 </body>
 </html>
-
-
-
-
