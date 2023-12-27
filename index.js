@@ -355,15 +355,29 @@
 // })
 
 
-let arr = [10, 9, 3,19, 4, 5, 6, 7]
+// let arr = [10, 9, 3,19, 4, 5, 6, 7]
 
-let a = arr.reduce((a,b) => {
-    return a-b
-})
+// let a = arr.reduce((a,b) => {
+//     return a-b
+// })
 
-// console.log(a)
+// // console.log(a)
 
-let b = arr.findIndex((age) => {
-    return age > 18;
-})
-console.log(b)
+// let b = arr.findIndex((age) => {
+//     return age > 18;
+// })
+// console.log(b)
+
+// let div = document.getElementById('abc')
+
+// let xyz = `
+// <h1>abc</h1>
+// <button onClick='abc(this)'>abc</button>    
+// `
+
+// div.innerHTML = xyz
+
+// window.abc = function (e){
+//     console.log(e.parentNode)
+//     alert('abc')
+// }
