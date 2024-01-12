@@ -381,3 +381,17 @@
 //     console.log(e.parentNode)
 //     alert('abc')
 // }
+
+let obj = {
+    a:'abc',
+    b:'xyz'
+}
+
+let obj2 = {
+    obj,
+    c:'ghi'
+}
+
+obj2.a = 'ghulam'
+
+console.log(obj ,obj2)
