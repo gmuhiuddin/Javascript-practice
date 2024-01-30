@@ -1,4 +1,4 @@
-//Question no:1
+// Question no:1
 
 
 // let months =['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -13,7 +13,7 @@
 // console.log(month1,"/",day,"/",year)
 
 
-//Question no:2
+// Question no:2
 
 
 // function age(){
@@ -27,7 +27,7 @@
 // }
 
 
-//Question no:3
+// Question no:3
 
 
 // let weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]; 
@@ -38,7 +38,7 @@
 // alert("your birthday week day is "+ans)
 
 
-//Question no:4
+// Question no:4
 
 
 // function eventDay(){
@@ -57,7 +57,7 @@
 // }
 
 
-//Question no:5
+// Question no:5
 
 // let weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]; 
 // let userDate = prompt("Enter your birth date mm/dd/yyyy")
@@ -71,7 +71,7 @@
 // }
 
 
-//Question no:6
+// Question no:6
 
 
 // function countDown(){
@@ -103,7 +103,7 @@
 // }
 
 
-//Question no:7
+// Question no:7
 
 
 // function findSeason (){
@@ -123,7 +123,7 @@
 // }
 
 
-//Question no:8
+// Question no:8
 
 
 // let userBirthDate = prompt("Enter your birth date mm/dd/yyyy");
@@ -134,7 +134,7 @@
 // alert(Math.round(finalTime/1000/60/60/24/365.25).toFixed(1),"your age in future")
 
 
-//Question no:9
+// Question no:9
 
 // function findDate (){
 // let userDate1 = document.getElementById('findDate1').value;
@@ -148,7 +148,7 @@
 // }
 
 
-//Question no:10 
+// Question no:10 
 
 
 // function findWorkingDay (){
@@ -382,16 +382,7 @@
 //     alert('abc')
 // }
 
-let obj = {
-    a:'abc',
-    b:'xyz'
-}
+const a = '123';
 
-let obj2 = {
-    obj,
-    c:'ghi'
-}
-
-obj2.a = 'ghulam'
-
-console.log(obj ,obj2)
+const b = parseFloat(a);
+console.log(b)
