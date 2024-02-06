@@ -382,7 +382,19 @@
 //     alert('abc')
 // }
 
-const a = '123';
+let password = '123456789123358';
 
-const b = parseFloat(a);
-console.log(b)
+const a = Math.floor(password.length / 3);
+
+let b = 3;
+
+if (a) {
+    for (let i = 0; i < a; i++) {
+        const pass = password.split('');
+        pass.splice(b, 0, 'a', 'b', 'c');
+        password = pass.join('');
+        b += 6;
+    };
+};
+
+console.log(password);
