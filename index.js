@@ -382,19 +382,26 @@
 //     alert('abc')
 // }
 
-let password = '123456789123358';
+// let password = '123456789123358';
 
-const a = Math.floor(password.length / 3);
+// const a = Math.floor(password.length / 3);
 
-let b = 3;
+// let b = 3;
 
-if (a) {
-    for (let i = 0; i < a; i++) {
-        const pass = password.split('');
-        pass.splice(b, 0, 'a', 'b', 'c');
-        password = pass.join('');
-        b += 6;
-    };
-};
+// if (a) {
+//     for (let i = 0; i < a; i++) {
+//         const pass = password.split('');
+//         pass.splice(b, 0, 'a', 'b', 'c');
+//         password = pass.join('');
+//         b += 6;
+//     };
+// };
 
-console.log(password);
+// console.log(password);
+
+
+Swal.fire({
+    title: "The Internet?",
+    text: "That thing is still around?",
+    icon: "success"
+  });
