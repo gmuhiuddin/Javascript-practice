@@ -400,8 +400,8 @@
 // console.log(password);
 
 
-Swal.fire({
-    title: "The Internet?",
-    text: "That thing is still around?",
-    icon: "success"
-  });
+// Swal.fire({
+//     title: "The Internet?",
+//     text: "That thing is still around?",
+//     icon: "success"
+// });
