@@ -405,3 +405,17 @@
 //     text: "That thing is still around?",
 //     icon: "success"
 // });
+
+
+const num = ['6', '5', 19, 11];
+let hiNum = num[0];
+
+
+for(let i = 0; i < num.length; i++){
+
+    if(hiNum > num[i]){
+    hiNum = num[i];
+
+}
+}
+console.log(hiNum);
