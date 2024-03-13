@@ -408,14 +408,19 @@
 
 
 const num = ['6', '5', 19, 11];
-let hiNum = num[0];
+// let hiNum = num[0];
 
 
-for(let i = 0; i < num.length; i++){
+// for(let i = 0; i < num.length; i++){
 
-    if(hiNum > num[i]){
-    hiNum = num[i];
+//     if(hiNum > num[i]){
+//     hiNum = num[i];
 
-}
-}
-console.log(hiNum);
+// }
+// }
+// console.log(hiNum);
+
+const a = num;
+
+
+console.log(a);
