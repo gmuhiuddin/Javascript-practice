@@ -420,7 +420,8 @@ const num = ['6', '5', 19, 11];
 // }
 // console.log(hiNum);
 
-const a = num;
+// const a = num;
 
+num[8] = '18888'
 
-console.log(a);
+console.log(num);
