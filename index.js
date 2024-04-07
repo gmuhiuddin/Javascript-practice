@@ -440,14 +440,52 @@ const num = ['6', '5', 19, 11];
 
 // console.log(0.2 + .2 == .4);
 
-const obj = {
-    a: 10,
-    b: {
-        c: 20,
-        d : () => {
-            console.log(this.c);
-        }
-    }
-}
+// const obj = {
+//     a: 10,
+//     b: {
+//         c: 20,
+//         d : () => {
+//             console.log(this.c);
+//         }
+//     }
+// }
 
-obj.b.d();
+// obj.b.d();
+
+// Products add in mongodb work olx
+
+// fetch('https://dummyjson.com/products')
+//     .then(res => res.json())
+//     .then(res => {
+
+//         let pId = 4;
+
+//         res.products.forEach(data => {
+
+//             const obj = {
+//                 ...data,
+//                 date: 1707851051332,
+//                 firstname: 'Ghulam',
+//                 lastname: "Muhiuddin",
+//                 latitude: "24.906557532647057",
+//                 longitude: "67.09582844484632",
+//                 productId: pId,
+//                 userEmail: "muhiuddinghulam825@gmail.com",
+//                 userId: "8UA4KTR8hNRUoKs95fV36X2yOEB2",
+//                 userImg: ""
+//             };
+//             console.log(obj);
+
+//             fetch('http://localhost:3001/products/add',{
+//                 method: "POST",
+//                 headers: {
+//                     "Content-Type": "application/json"
+//                 },
+//                 body: JSON.stringify(obj)
+//             })
+//             .then(res => res.json())
+//             .then(res => console.log(res));
+
+//             pId += 1;
+//         });
+//     })
