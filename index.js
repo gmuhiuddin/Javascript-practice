@@ -422,6 +422,32 @@ const num = ['6', '5', 19, 11];
 
 // const a = num;
 
-num[8] = '18888'
+// num[8] = '18888'
 
-console.log(num);
+// console.log(num);
+
+
+// function foo(){
+// var a = 1;
+
+// setTimeout(() => {
+//     console.log(a);
+//     a = 2;
+// }, 1000);
+// };
+
+// foo();
+
+// console.log(0.2 + .2 == .4);
+
+const obj = {
+    a: 10,
+    b: {
+        c: 20,
+        d : () => {
+            console.log(this.c);
+        }
+    }
+}
+
+obj.b.d();
