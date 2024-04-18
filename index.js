@@ -489,3 +489,21 @@ const num = ['6', '5', 19, 11];
 //             pId += 1;
 //         });
 //     })
+
+const a = [1,2,3,4,5];
+
+// const bla = a.reduce((accumulator, currentValue) => {
+
+//     console.log(accumulator);
+
+//     return accumulator + currentValue
+//     })
+
+let bla = 0;
+
+for(let i = 0; i < a.length; i++){
+    console.log(bla);
+bla = bla+a[i]
+}
+
+    console.log(bla);
