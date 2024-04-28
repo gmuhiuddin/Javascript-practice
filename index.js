@@ -528,4 +528,4 @@ function forEachCopy(thiss ,bla) {
 
 arr.forEach((element) => {
     console.log(element);
-})
+});
