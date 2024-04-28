@@ -499,11 +499,33 @@ const a = [1,2,3,4,5];
 //     return accumulator + currentValue
 //     })
 
-let bla = 0;
+// let bla = 0;
 
-for(let i = 0; i < a.length; i++){
-    console.log(bla);
-bla = bla+a[i]
-}
+// for(let i = 0; i < a.length; i++){
+//     console.log(bla);
+// bla = bla+a[i]
+// }
 
-    console.log(bla);
+//     console.log(bla);
+
+// function bla(abc){
+//     abc('G_Muhiuddin')
+// }
+
+// Is this callback function
+
+// bla((nameee) => {
+// console.log(nameee);
+// })
+
+const arr = [1,3,45,66,542]
+
+function forEachCopy(thiss ,bla) {
+    for(let i = 0; i < thiss.length; i++){
+        bla(thiss[i]);
+    }
+};
+
+arr.forEach((element) => {
+    console.log(element);
+})
