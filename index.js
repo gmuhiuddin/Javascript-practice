@@ -518,14 +518,38 @@ const a = [1,2,3,4,5];
 // console.log(nameee);
 // })
 
-const arr = [1,3,45,66,542]
+// const arr = [1,3,45,66,542]
 
-function forEachCopy(thiss ,bla) {
-    for(let i = 0; i < thiss.length; i++){
-        bla(thiss[i]);
-    }
-};
+// function forEachCopy(thiss ,bla) {
+//     for(let i = 0; i < thiss.length; i++){
+//         bla(thiss[i]);
+//     }
+// };
 
-arr.forEach((element) => {
-    console.log(element);
-});
+// arr.forEach((element) => {
+//     console.log(element);
+// });
+
+// var str = 111;
+
+// str[0] = 0;
+
+// console.log(parseFloat("111") +1);
+
+// let obj = {
+//     name: "Ghulam",
+//     age: 14
+// }
+
+// obj.age = 15;
+
+// console.log(obj.age);
+
+
+// console.log(obj.age);
+
+const qr = qrcode(0, "M");
+qr.addData('https://gmuhiuddin.website');
+qr.make();
+
+document.getElementById("container").innerHTML = qr.createImgTag();
