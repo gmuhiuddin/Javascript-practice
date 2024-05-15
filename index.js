@@ -407,7 +407,7 @@
 // });
 
 
-const num = ['6', '5', 19, 11];
+// const num = ['6', '5', 19, 11];
 // let hiNum = num[0];
 
 
@@ -490,7 +490,7 @@ const num = ['6', '5', 19, 11];
 //         });
 //     })
 
-const a = [1,2,3,4,5];
+// const a = [1,2,3,4,5];
 
 // const bla = a.reduce((accumulator, currentValue) => {
 
@@ -548,8 +548,17 @@ const a = [1,2,3,4,5];
 
 // console.log(obj.age);
 
-const qr = qrcode(0, "M");
-qr.addData('https://gmuhiuddin.website');
-qr.make();
+// const qr = qrcode(0, "M");
+// qr.addData('https://gmuhiuddin.website');
+// qr.make();
 
-document.getElementById("container").innerHTML = qr.createImgTag();
+// document.getElementById("container").innerHTML = qr.createImgTag();
+
+debugger
+var b = "1";
+
+// console.log(a);
+
+const a = "a";
+
+console.log(a);
