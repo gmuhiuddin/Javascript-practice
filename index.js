@@ -554,11 +554,41 @@
 
 // document.getElementById("container").innerHTML = qr.createImgTag();
 
-debugger
-var b = "1";
+// debugger
+
+// abc();
+
+// var b = "1";
+
+// async function abc(){
+// const res = await fetch("https://dummyjson.com/products/");
+// const response = await res.json();
+
+//     console.log("response");
+// }
 
 // console.log(a);
 
-const a = "a";
+// var a = "a";
 
-console.log(a);
+// console.log(a);
+
+//Make appontment for timming for car parking 
+
+const timeArr = [{ time: "00-00 01-00" }, { time: "01-00 02-00" }, { time: "02-00 03-00" }, { time: "03-00 04-00" }, { time: "04-00 05-00" }, { time: "05-00 06-00" }, { time: "06-00 07-00" }, { time: "07-00 08-00" }, { time: "08-00 09-00" }, { time: "9-00 10-00" }, { time: "10-00 11-00" }, { time: "11-00 12-00" }, { time: "12-00 13-00" }, { time: "13-00 14-00" }, { time: "14-00 15-00" }, { time: "15-00 16-00" }, { time: "16-00 17-00" }, { time: "17-00 18-00" }, { time: "18-00 19-00" }, { time: "19-00 20-00" }, { time: "20-00 21-00" }, { time: "21-00 22-00" }, { time: "22-00 23-00" }, { time: "23-00 24-00" }];
+
+const selectedTimeArr = [{ time: "00-00 01-00" }, { time: "01-00 02-00" }, { time: "02-00 03-00" }, { time: "03-00 04-00" }, { time: "04-00 05-00" }, { time: "05-00 06-00" }, { time: "06-00 07-00" }, { time: "07-00 08-00" }, { time: "08-00 09-00" }, { time: "9-00 10-00" }, { time: "10-00 11-00" }, { time: "11-00 12-00" }, { time: "12-00 13-00" }, { time: "13-00 14-00" }, { time: "14-00 15-00" }, { time: "15-00 16-00" }, { time: "16-00 17-00" }, { time: "17-00 18-00" }, { time: "18-00 19-00" }, { time: "19-00 20-00" }, { time: "20-00 21-00" }, { time: "21-00 22-00" }, { time: "21-00 22-00" }, { time: "22-00 23-00" }, { time: "23-00 24-00" }];
+
+timeArr.forEach(element => {
+    element.booked = 0;
+});
+
+selectedTimeArr.forEach(element => {
+    timeArr.forEach(selecedElement => {
+        if (selecedElement.time === element.time) {
+            selecedElement.booked = selecedElement.booked + 1;
+        }
+    })
+});
+
+console.log(timeArr);
