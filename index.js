@@ -601,6 +601,31 @@
 //     value += 10;
 // }
 
-document.querySelector("#btn").addEventListener("click", (e) => {
-    console.log(e, this);
-})
+// document.querySelector("#btn").addEventListener("click", (e) => {
+//     console.log(e, this);
+// })
+
+// const startCountdown = () => {
+
+    // localStorage.setItem("num", "100");
+
+    // const countDownSpan = document.getElementById('countdown');
+    
+    // setInterval(() => {
+    //     const countDownNum = localStorage.getItem('num');
+    //     countDownSpan.innerText = countDownNum;
+    //     localStorage.setItem("num", countDownNum-1);
+    // }, 1000);
+// };
+
+// Add 24 hours timer
+
+// const countDownSpan = document.getElementById('countdown');
+// let deliveryTime = 1717409710959;
+// const nowDate = new Date();
+// let outstandingTime = deliveryTime - nowDate.getTime();
+
+// setInterval(() => {
+//     countDownSpan.innerText = `${Math.floor(outstandingTime/1000/60/60)} : ${Math.floor((outstandingTime % (1000 * 60 * 60)) / (1000 * 60))} : ${Math.floor((outstandingTime % (1000 * 60 )) / 1000)}`;
+//     outstandingTime -= 1000;
+// }, 1000);
