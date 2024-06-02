@@ -593,10 +593,14 @@
 
 // console.log(timeArr);
 
-let value = 10;
+// let value = 10;
 
-for(let i = 0; i < 10; i++){
-    document.write(`18 × ${i+1} = ${value}<br />`);
+// for(let i = 0; i < 10; i++){
+//     document.write(`18 × ${i+1} = ${value}<br />`);
 
-    value += 10;
-}
+//     value += 10;
+// }
+
+document.querySelector("#btn").addEventListener("click", (e) => {
+    console.log(e, this);
+})
