@@ -607,15 +607,15 @@
 
 // const startCountdown = () => {
 
-    // localStorage.setItem("num", "100");
+// localStorage.setItem("num", "100");
 
-    // const countDownSpan = document.getElementById('countdown');
-    
-    // setInterval(() => {
-    //     const countDownNum = localStorage.getItem('num');
-    //     countDownSpan.innerText = countDownNum;
-    //     localStorage.setItem("num", countDownNum-1);
-    // }, 1000);
+// const countDownSpan = document.getElementById('countdown');
+
+// setInterval(() => {
+//     const countDownNum = localStorage.getItem('num');
+//     countDownSpan.innerText = countDownNum;
+//     localStorage.setItem("num", countDownNum-1);
+// }, 1000);
 // };
 
 // Add 24 hours timer
@@ -629,3 +629,33 @@
 //     countDownSpan.innerText = `${Math.floor(outstandingTime/1000/60/60)} : ${Math.floor((outstandingTime % (1000 * 60 * 60)) / (1000 * 60))} : ${Math.floor((outstandingTime % (1000 * 60 )) / 1000)}`;
 //     outstandingTime -= 1000;
 // }, 1000);
+
+const stlMeasurementForm = document.getElementById("stl-measurement-form");
+const resultContainer = document.getElementById("result-container");
+
+stlMeasurementForm.addEventListener("submit", (e) => {
+    e.preventDefault()
+
+const stlStock = [
+    {
+        barLength: 250,
+        width: 115,
+        thickness: 23
+    }, {
+        barLength: 55,
+        width: 110,
+        thickness: 22
+    }, {
+        barLength: 220,
+        width: 150,
+        thickness: 22
+    },];
+
+const filterStl = stlStock.filter(bar => bar.width >= e.target[2].value && bar.barLength >= e.target[0].value && bar.thickness >= e.target[1].value);
+console.log(filterStl);
+filterStl.forEach(element => {
+console.log(element);
+
+    resultContainer.innerHTML += `<h1>width: ${element.width}, length: ${element.barLength}, thickness: ${element.thickness}</h1>`;
+});
+})
