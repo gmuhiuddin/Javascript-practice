@@ -630,32 +630,97 @@
 //     outstandingTime -= 1000;
 // }, 1000);
 
-const stlMeasurementForm = document.getElementById("stl-measurement-form");
-const resultContainer = document.getElementById("result-container");
+// const stlMeasurementForm = document.getElementById("stl-measurement-form");
+// const resultContainer = document.getElementById("result-container");
 
-stlMeasurementForm.addEventListener("submit", (e) => {
-    e.preventDefault()
+// stlMeasurementForm.addEventListener("submit", (e) => {
 
-const stlStock = [
-    {
-        barLength: 250,
-        width: 115,
-        thickness: 23
-    }, {
-        barLength: 55,
-        width: 110,
-        thickness: 22
-    }, {
-        barLength: 220,
-        width: 150,
-        thickness: 22
-    },];
+//     e.preventDefault();
+//     resultContainer.innerHTML = null;
 
-const filterStl = stlStock.filter(bar => bar.width >= e.target[2].value && bar.barLength >= e.target[0].value && bar.thickness >= e.target[1].value);
-console.log(filterStl);
-filterStl.forEach(element => {
-console.log(element);
+//     const stlStock = [
+//         {
+//             barLength: 250,
+//             width: 115,
+//             thickness: 23
+//         }, {
+//             barLength: 55,
+//             width: 110,
+//             thickness: 22
+//         }, {
+//             barLength: 20,
+//             width: 105,
+//             thickness: 22
+//         }, {
+//             barLength: 220,
+//             width: 105,
+//             thickness: 22
+//         }];
 
-    resultContainer.innerHTML += `<h1>width: ${element.width}, length: ${element.barLength}, thickness: ${element.thickness}</h1>`;
-});
-})
+//     let ftlStl = [];
+
+//     const filterStl = stlStock.filter(bar => bar.width == e.target[2].value && bar.barLength >= e.target[0].value && bar.thickness == e.target[1].value);
+
+//     filterStl.length ? ftlStl = filterStl : ftlStl = stlStock.filter(bar => bar.width >= e.target[2].value && bar.barLength >= e.target[0].value && bar.thickness >= e.target[1].value);
+
+//     ftlStl.forEach(element => {
+
+//         resultContainer.innerHTML += `<h1>${filterStl.length ? "Finded" : "Alternate"} width: ${element.width}, length: ${element.barLength}, thickness: ${element.thickness}</h1>`;
+//     });
+// });
+
+
+// stlMeasurementForm.addEventListener("submit", (e) => {
+//     e.preventDefault();
+//     resultContainer.innerHTML = null;
+
+//     const stlStock = [
+//         {
+//             barLength: 250,
+//             width: 115,
+//             thickness: 23
+//         }, {
+//             barLength: 55,
+//             width: 110,
+//             thickness: 22
+//         }, {
+//             barLength: 20,
+//             width: 105,
+//             thickness: 22
+//         }, {
+//             barLength: 220,
+//             width: 105,
+//             thickness: 22
+//         }];
+
+//     const filterStlIndex = stlStock.findIndex(bar => bar.width == e.target[2].value && bar.barLength >= e.target[0].value && bar.thickness == e.target[1].value);
+
+//     stlStock[filterStlIndex].barLength -= e.target[0].value;
+
+
+// });
+
+// const username = "123456";
+// const email = "";
+
+// if(!email && !username ){
+//     console.log("hello")
+// }
+
+// Generated unique code
+
+const generatedCode = ["abcdef", "asdffd", "asdfaa"];
+
+const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'; // Letters to choose from
+let code = '';
+
+do {
+    code = "";
+
+    for (let i = 0; i < 6; i++) {
+        const randomIndex = Math.floor(Math.random() * characters.length);
+        code += characters[randomIndex];
+    };
+} while (generatedCode.includes(code));
+
+console.log(code);
