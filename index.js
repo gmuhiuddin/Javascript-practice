@@ -712,15 +712,30 @@
 const generatedCode = ["abcdef", "asdffd", "asdfaa"];
 
 const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'; // Letters to choose from
-let code = '';
+// With do while loop
 
-do {
+// let code = generatedCode;
+
+// do {
+//     code = "";
+
+//     for (let i = 0; i < 6; i++) {
+//         const randomIndex = Math.floor(Math.random() * characters.length);
+//         code += characters[randomIndex];
+//     };
+// } while (generatedCode.includes(code));
+
+// with for loop but if I want to create unique code with for loop I want to add a one code of created code because for loop want a condition to run but if condition not match like code value equals to empty string the coondition not match the code was not generating
+
+let code = generatedCode[0];
+
+for (let i = 0; generatedCode.includes(code); i++) {
     code = "";
 
-    for (let i = 0; i < 6; i++) {
+    for (let j = 0; j < 6; j++) {
         const randomIndex = Math.floor(Math.random() * characters.length);
         code += characters[randomIndex];
     };
-} while (generatedCode.includes(code));
+}
 
 console.log(code);
