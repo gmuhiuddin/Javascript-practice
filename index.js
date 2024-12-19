@@ -758,11 +758,31 @@
 
 // func()
 
-const obj  = {
-    fn: "ghulam",
-    func: function (){
-        console.log("this", this)
-    }
-}
+// const obj  = {
+//     fn: "ghulam",
+//     func: function (){
+//         console.log("this", this)
+//     }
+// }
 
-obj.func()
+// obj.func()
+
+// Some callbacks practice
+
+const getUserInfo = (username, callback) => {
+    const users = [{
+        name: "Ghulam muhiuddin",
+        username: "gmuhiuddin"
+    }, {
+        name: "Muhammad Imran",
+        username: "imran"
+    }]
+
+    const user = users.find(user => user.username == username);
+
+    callback(user || "Incorrect user name");
+};
+
+getUserInfo("gmuhiuddn", (user) => {
+    console.log(user);
+})
